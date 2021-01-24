@@ -1,0 +1,458 @@
+@charset "utf8";
+
+/* 全体への指定 */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #fefefe;
+  color: #333;
+  font-family: 'Sawarabi Gothic','Noto Sans JP', sans-serif;
+}
+
+p,
+dt,
+dd,
+h2,
+h3 {
+  letter-spacing: 0.07em;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+iframe {
+  vertical-align: bottom;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.f_b {
+  font-weight: bold;
+}
+
+.fzl {
+  font-size: 1.2em;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+.box p:first-of-type {
+  margin-bottom: 20px;
+}
+
+.sec_ttl {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 2.4em;
+  font-weight: 300;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.eng_ttl {
+  bottom: -15px;
+  color: #cccccc70;
+  font-family: 'Lobster', cursive;
+  font-size: .8em;
+  left: 50%;
+  letter-spacing: .07em;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: -100;
+}
+
+.sec03 .eng_ttl,
+.sec05 .eng_ttl {
+  color: #efefef70;
+  z-index: 1;
+}
+
+/*-----------------
+ スマホサイズ
+-----------------*/
+* {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.pc-show {
+  display: none;
+}
+
+/* ヘッダー */
+header {
+  background: #efa72b;
+}
+
+.head_logo {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.5em;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.head_logo a {
+  text-decoration: none;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header li {
+  background: #fefefe;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+  padding: 10px 0;
+  text-align: center;
+  width: 50%;
+}
+
+header li a {
+  display: block;
+  text-decoration: none;
+}
+
+header li:first-of-type,
+header li:nth-of-type(2){
+  border-top: 1px solid #333;
+}
+
+header li:nth-of-type(odd):not(:last-of-type ) {
+  border-right: 1px solid #333;
+}
+
+header li:last-of-type {
+  width: 100%;
+}
+
+/* 各セクション */
+.sec01, .sec02, .sec03, .sec04 {
+  padding: 40px;
+}
+
+/* リードセクション */
+.sec01 {
+  background-image: url("../images/sec01_bgi_pc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.sec01 .text_box {
+  background: rgba(255,255,255,.8);
+  padding: 30px;
+}
+
+.sec01 .lead_text {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ニュース */
+dd {
+  /* float: left; */
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 20px ;
+}
+
+dd:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+/* 学科 */
+.sec03 {
+  background: #aecfed;
+}
+
+.sec03 h3 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.8em;
+  font-weight: 100;
+}
+
+.sec03 img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 580px;
+}
+
+.dep .text_box {
+  margin-bottom: 10px;
+}
+
+.dep:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.dep_lead::before,
+.dep_lead::after {
+  content: "～";
+}
+
+.dep_lead::before {
+  margin-right: 0.3em;
+}
+
+.dep_lead::after {
+  margin-left: 0.3em;
+}
+
+/* 講師 */
+.grid img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.t_name {
+  font-family: 'Yusei Magic', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.box {
+  margin: 0 auto 50px;
+  max-width: 450px;
+}
+
+/* ギャラリー */
+.sec05 {
+  background: #aecfed;
+  padding: 20px 0;
+}
+
+/* アクセス */
+.sec06 {
+  position: relative;
+  padding: 40px 0 40px;
+}
+
+.gmap {
+  height: 30vh;
+  width: 100vw;
+}
+
+.info {
+  padding: 20px 0 0 20px;
+}
+
+/* フッター */
+footer {
+  background: #efa72b;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*-----------------
+ PCサイズ
+-----------------*/
+@media screen and (min-width:764px) {
+  /* 全体 */
+  * {
+    font-size: 18px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  /* ヘッダー */
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .head_logo a:hover {
+    opacity: .7;
+    transition: .3s;
+  }
+
+  nav {
+    align-self: center;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    font-size: 1.2em;
+  }
+
+  header li {
+    background: transparent;
+    border: none;
+    color: #333;
+    width: inherit;
+  }
+
+  header li:nth-of-type(odd),
+  header li:first-of-type,
+  header li:nth-of-type(2),
+  header li:nth-of-type(odd):not(:last-of-type) {
+    border: none;
+  }
+
+  header li:last-of-type {
+    width: inherit;
+  }
+
+  header li a:hover {
+    text-decoration: underline;
+  }
+
+  nav ul li:not(:last-of-type) {
+    margin-right: 40px;
+  }
+
+  /* 各セクション */
+  .sec01 {
+    padding: 120px 80px;
+  }
+  .sec02, .sec03, .sec04, .sec06 {
+    padding: 80px;
+  }
+
+  .align-center {
+    text-align: left;
+  }
+
+  /* リードセクション */
+  .sec01 {
+    margin: 0 auto;
+  }
+
+  .sec01 .text_box {
+    padding: 30px;
+    width: 500px;
+  }
+
+  /* ニュース */
+  dt, dd {
+    border-bottom: 1px dotted #153692;
+    float: left;
+    padding: 20px 0;
+  }
+
+  dt {
+    clear: left;
+    padding-left: 30px;
+    width: calc(20% - 30px);
+  }
+
+  dd {
+    /* padding-left: 80px; */
+    width: calc(80% - 30px);
+  }
+
+  /* 講師 */
+  .sec04 {
+    margin: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .grid img {
+    width: 150px;
+  }
+
+  .box img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .box p {
+    float: left;
+  }
+
+  .box p:nth-of-type(1n) {
+    width: 280px;
+  }
+
+  /* ギャラリー */
+  .sec05 {
+    overflow: hidden;
+    padding: 20px 60px;
+  }
+
+  /* 学科紹介 */
+  .dep {
+    display: flex;
+  }
+
+  .dep:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .dep:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .dep:nth-child(odd) .text_box {
+    padding-left: 20px;
+  }
+
+  .dep:nth-child(even) .text_box {
+    padding-right: 20px;
+  }
+
+  .dep .text_box, .dep .img_box {
+    width: 50%;
+  }
+
+  /* アクセス */
+  .sec06 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gmap {
+    height: 40vh;
+    max-width: 700px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  .accessBox{
+    display: flex;
+    justify-content: center;
+  }
+
+  .info{
+    padding: 0;
+  }
+}
