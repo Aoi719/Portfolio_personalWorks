@@ -1,0 +1,381 @@
+// 変数ファイルのインポート
+@import 'variables';
+
+/*-------------------
+全ページ共通
+-------------------*/
+body {
+  background: $base-color;
+  color: $text-color;
+  font-family: Meiryo, sans-serif;
+  font-size: $pc-text;
+  line-height: 1.5;
+  max-width: 100vw;
+  overflow-x: hidden;
+  @media screen and (max-width:($sp)) {
+    font-size: $sp-text;
+  }
+}
+
+h1 {
+  border-bottom: 1px solid $line-color;
+  font-size: $pc-min-title;
+  padding: 20px 0 5px;
+  text-align: center;
+
+  @media screen and (max-width:($sp)) {
+    font-size: $sp-min-title;
+  }
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $pc-width;
+  padding: 40px 20px 0;
+  @media screen and (max-width:($sp)) {
+    max-width: $sp-width;
+  }
+}
+
+.box {
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: $main-color;
+  border: none;
+  border-radius: 5px;
+  font-size: $pc-small-title;
+  text-align: center;
+
+  @media screen and (max-width:($sp)) {
+    font-size: $sp-text;
+  }
+}
+
+// フッター
+.footerFixed {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+footer {
+  background: $sub-color;
+  bottom: 0;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+}
+
+/*-------------------
+扉ページ
+-------------------*/
+#index {
+  h1 {
+    padding: 100px 0 10px 0;
+    position: relative;
+
+    &::before {
+      //ハムスターくん
+      background-image: url(../img/hamster_happy.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 120px;
+      left: calc(50% - 250px);
+      position: absolute;
+      top: 30px;
+      width: 120px;
+      @media screen and (max-width:($sp)) {
+        height: 80px;
+        left: 0;
+        width: 80px;
+      }
+    }
+
+    &::after {
+      //モグラ先生
+      background-image: url(../img/mogura_hakase.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 120px;
+      position: absolute;
+      right: calc(50% - 250px);
+      top: 30px;
+      width: 120px;
+      @media screen and (max-width:($sp)) {
+        height: 80px;
+        right: 0;
+        width: 80px;
+      }
+    }
+  }
+
+  .bubble {
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    font-size: 16px;
+    left: 50%;
+    padding: 10px 0;
+    position: absolute;
+    top: 10px;
+    transform: translate(-50%);
+    width: 200px;
+    @media screen and (max-width:($sp)) {
+      font-size: 14px;
+    }
+
+    &::before {
+      background: #fff;
+      bottom: -5px;
+      content: '';
+      height: 30px;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%) rotate(45deg);
+      width: 30px;
+      z-index: -1;
+    }
+  }
+
+   p.box {
+    line-height: 1.7;
+  }
+
+  .lead {
+    font-weight: bold;
+    text-align: center;
+    font-size: $pc-small-title;
+    margin-bottom: 20px;
+
+    @media screen and (max-width:($sp)) {
+    font-size: $sp-small-title;
+    }
+  }
+
+  .point.box {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .linkBox {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:($sp)) {
+      display: block;
+    }
+  }
+
+  .linkItem {
+    font-size: $pc-min-title;
+    width: 45%;
+    height: 300px;
+    position: relative;
+    @media screen and (max-width:($sp)) {
+      font-size: $sp-min-title;
+      width: 100%;
+      height: 100px;
+      margin: 20px 0 20px;
+    }
+  }
+
+  .linkItem a {
+    color: $text-color;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .linkItem_txt {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .annotation li:not(:last-of-type){
+    margin-bottom: 10px;
+  }
+
+  .annotation li::before {
+    content: '※';
+    padding-right: 5px;
+  }
+}
+
+/*-------------------
+クイズページ
+-------------------*/
+.quizBody {
+  margin: 0 auto;
+  max-width: $pc-width;
+  padding: 30px;
+  @media screen and (max-width:($sp)) {
+    max-width: $sp-width;
+  }
+}
+
+.html_quiz h1::before, .html_quiz  h1::after {
+  content: '●';
+}
+
+.css_quiz h1::before, .css_quiz h1::after {
+  content: '★';
+}
+
+.questionTtl {
+  font-size: $pc-small-title;
+  @media screen and (min-width:($pc)) {
+    text-align: center;
+  }
+}
+
+.answerBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (min-width:($pc)) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width:($sp)) {
+    display: block;
+  }
+}
+
+.answerBtn {
+  background: $main-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  font-size: $pc-small-title;
+  margin-top: 20px;
+  padding: 30px 10px;
+  width: 45%;
+
+  @media screen and (max-width:($sp)) {
+    font-size: $sp-text;
+    padding: 20px 10px;
+    width: 100%;
+  }
+}
+
+.answerBtn.correct {
+  background: blue;
+}
+
+.answerBtn.bad {
+  background: red;
+}
+
+// キャラクターセクション
+.charcterBox {
+  margin: 0 auto;
+  max-width: $pc-width;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.teacher {
+  width: 200px;
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width:($sp)) {
+    width: 110px;
+  }
+}
+
+.student {
+  width: 180px;
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width:($sp)) {
+    width: 90px;
+  }
+}
+
+.charLine {
+  background: #fff;
+  border-radius: 10px;
+  font-weight: 550;
+  line-height: 1;
+  padding: 30px;
+  position: absolute;
+  width: 200px;
+  min-height: 16px;
+  @media screen and (max-width:($sp)) {
+    padding: 10px;
+    width: 40vw;
+  }
+}
+
+.charLineR {
+  right: 230px;
+  top: 50px;
+
+  @media screen and (max-width:($sp)) {
+    right: 110px;
+    top: 0;
+  }
+}
+
+.charLineL {
+  left: 200px;
+  top: 50px;
+
+  @media screen and (max-width:($sp)) {
+    left: 100px;
+  }
+}
+
+.charLineR::after {
+  content: '';
+  position: absolute;
+  border-bottom: 10px solid #fff;
+  border-right: 30px solid transparent;
+  border-top: 25px solid transparent;
+  right: -25px;
+  top: -15px;
+}
+
+.charLineL::after {
+  content: '';
+  position: absolute;
+  border-bottom: 10px solid transparent;
+  border-right: 30px solid #fff;
+  border-top: 7px solid transparent;
+  left: -25px;
+  top: 10px;
+}
+
+.backBox{
+  width: fit-content;
+  margin-left: auto;
+
+  @media screen and (max-width:($sp)) {
+    max-width: $sp-width;
+  }
+}

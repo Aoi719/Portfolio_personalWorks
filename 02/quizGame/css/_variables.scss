@@ -1,0 +1,50 @@
+// 変数定義
+
+// カラー
+//base color
+$base-color: #DDDDDD;
+
+//main color
+$main-color: #78c5b1;
+
+//sub color
+$sub-color: #8cc997;
+//accent color
+$accent-color: #BB3344;
+
+//text color/line color
+$text-color: #333;
+
+$line-color: #454545;
+
+// 文字サイズ
+// header
+$sp-catch-copy: calc(1em + 6px); // 22
+$tab-catch-copy: calc(1em + 14px); // 30
+$pc-catch-copy: calc(1em + 30px); // 46
+
+//main
+$sp-min-title: calc(1em + 14px); // 30
+$pc-min-title: calc(1em + 20px); // 36
+
+$sp-small-title: calc(1em + 8px); // 24
+$pc-small-title: calc(1em + 4px); // 20
+
+$pc-foot-title: calc(1em + 16px); // 32
+
+$sp-text: calc(1em - 2px); // 14
+$pc-text: 1em; // 16
+
+$btn: 1em; // 16
+
+// footer
+$sp-copyright: calc(1em - 4px); // 12
+$pc-copyright: calc(1em - 2px); // 14
+
+// 表示幅
+$pc-width: 1200px;
+$sp-width: 300px;
+
+// ブレイクポイント
+$sp: 768px; //（最大幅）
+$pc: 769px; //（最小幅）
