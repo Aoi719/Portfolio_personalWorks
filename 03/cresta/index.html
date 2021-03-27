@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/html5doctor.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- OGP -->
+		<meta property="og:url" content=" ページの URL" />
+		<!-- 絶対パス -->
+		<meta property="og:title" content=" ページの タイトル" />
+		<meta property="og:site_name" content="サイト名" />
+		<meta property="og:description" content=" ページのディスクリプション" />
+		<meta property="og:image" content=" サムネイル画像の URL" />
+		<!-- 絶対パス -->
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@aoi_web_719" />
+
+		<title>クリスタカンプコーディング</title>
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="spHeader">
+			<div class="logo">
+				<h1><a href="/">Cresta Design</a></h1>
+			</div>
+				<!-- ハンバーガーメニュー用ボタン -->
+				<button type="button" class="hamburger pc-hide">
+					<span class="menu_line"></span>
+				</button>
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="#concept" lang="en">Concept</a></li>
+					<li><a href="#service" lang="en">Service</a></li>
+					<li><a href="#works" lang="en">Works</a></li>
+					<li><a href="contact.html" lang="en">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Main Visual -->
+			<div class="mainVisiual" id="bg-slider">
+					<h1 class="mainTitle" id="bg-slider__title">
+						<span lang="en">Design for Smile.</span>
+						<span class="subTitle">
+							快適なオフィスを<br class="pc-hide" />デザインする
+						</span>
+					</h1>
+			</div>
+
+			<!-- Concept -->
+			<section class="section concept" id="concept">
+				<div class="container">
+					<h2 class="dark" lang="en">CONCEPT</h2>
+					<p class="lead">“働きたくなる空間”をデザインする<br class="pc-hide" />ことで<br class="sp-hide">人々を幸せにする。</p>
+					<div class="contents">
+						<p class="textBox">
+							私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。
+						</p>
+						<div class="imgBox"><img src="images/concept-image_2x.jpg" alt="" /></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Works -->
+			<section class="section works" id="works">
+				<div class="bgiBox">
+					<div class="container">
+						<h2 class="bright" lang="en">Works</h2>
+						<div class="worksContents">
+							<div class="worksBox">
+								<div class="imgBox"><img src="images/card-img01_2x.jpg" alt="" /></div>
+								<div class="textBox">
+									<p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+								</div>
+							</div>
+							<div class="worksBox">
+								<div class="imgBox"><img src="images/card-img02_2x.jpg" alt="" /></div>
+								<div class="textBox">
+									<p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+								</div>
+							</div>
+							<div class="worksBox">
+								<div class="imgBox"><img src="images/card-img03_2x.jpg" alt="" /></div>
+								<div class="textBox">
+									<p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+								</div>
+							</div>
+						</div>
+						<button class="btn"><a href="#" lang="en">View more</a></button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Service -->
+			<section class="section service clearfix" id="service">
+				<div class="container"><h2 class="dark" lang="en">Service</h2></div>
+					<div class="serviceContents">
+						<div class="serviceBox serviceBox01">
+							<p class="serviceText" lang="en">Hearing</p>
+						</div>
+						<div class="serviceBox serviceBox02">
+							<p class="serviceText" lang="en">Planning</p>
+						</div>
+						<div class="serviceBox serviceBox03">
+							<p class="serviceText" lang="en">Direction</p>
+						</div>
+					</div>
+			</section>
+
+			<section class="section contact">
+				<div class="container">
+					<h2 class="bright" lang="en">Contact</h2>
+					<p>お気軽にご相談ください。</p>
+					<div class="btn"><a href="contact.html">Contact</a></div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p><small>&copy;cresta.design all rights reserved</small></p>
+		</footer>
+
+		<script src="js/jquery.bgswitcher.js"></script>
+		<script src="js/changeColor.js"></script>
+		<script src="js/hamburger.js"></script>
+		<script>
+			// 表示操作
+			jQuery(function($) {
+    $('#bg-slider').bgSwitcher({
+        images: ['images/fv-bgi_01_2x.jpg', 'images/fv-bgi_02_2x.jpg', 'images/fv-bgi_03_2x.jpg'], // 切り替える背景画像を指定
+        interval: 6000, // 背景画像を切り替える間隔を指定 3000=3秒
+        loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+        shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+        effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+        duration: 1000, // エフェクトの時間を指定します。
+        easing: "linear" // エフェクトのイージングをlinear,swingから指定
+    });
+});
+		</script>
+	</body>
+</html>

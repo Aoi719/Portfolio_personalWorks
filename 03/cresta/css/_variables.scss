@@ -1,0 +1,64 @@
+//変数定義
+
+// カラー
+//base color
+$base-color: #DDDDDD;
+
+//main color
+// $main-color: #78c5b1;
+//sub color
+// $sub-color: #8cc997;
+//accent color
+// $accent-color: #BB3344;
+
+//text color/btn color/line color
+$text-color: #282f35;
+$text-bright-color: #FFFDFD;
+
+$btn-color: #f7d43f;
+
+$line-bright-color: #FFFDFD;
+$line-dark-color: #282f35;
+
+//フォントサイズ(SP)
+// 標準のサイズ
+$default-fz: 1em;//16px（一般的なブラウザのフォントサイズを基準とする）
+// h1などの主題サイズ
+$main-title-fz: calc(1em + 21px);//37px
+// 各セクションタイトルなどのサイズ
+$section-title-fz: calc(1em + 14px);//30px
+$lead-fz: calc(1em + 4px);//20px
+$section-decoration-fz: calc(1em + 24px);//40px
+// ヘッダー文字サイズ
+$header-title-fz: calc(1em + 10px);//26px
+
+// フォントサイズ(PC・TAB)
+// 標準のサイズ→SPと同様
+// h1などの主題サイズ
+$lg-main-title-fz: calc(4em + 4px);//70px
+// 各セクションタイトルなどのサイズ
+$lg-section-title-fz: calc(3em + 12px);//60px
+$lg-lead-fz: calc(1em + 14px);//30px
+$lg-section-decoration-fz: calc(5em + 10px);//90px
+$lg-service-fz: calc(1em + 24px);//40px
+// ヘッダー文字サイズ→SPと同様
+
+//mixin
+//メディアクエリ(Bootstrapのものを参照)
+@mixin sm {
+	@media screen and (max-width:768px) {
+		@content;
+	}
+}
+
+@mixin md {
+  @media screen and (min-width:769px) and (max-width:992){
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width:769px){
+    @content;
+  }
+}
