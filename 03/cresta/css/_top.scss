@@ -263,9 +263,7 @@ h2.dark {
   top: 50%;
   transform: translate(-50%,-50%);
   background: rgba(40, 47, 53, 0.5);
-  &__color{
-    background: rgba(40, 47, 53, 0.5);
-  }
+  padding: 0 10px 10px 10px;
   @include lg {
     font-size: $lg-service-fz;
   }

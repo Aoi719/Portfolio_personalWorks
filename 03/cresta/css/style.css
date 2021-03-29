@@ -548,10 +548,7 @@ h2.dark::after {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: rgba(40, 47, 53, 0.5);
-}
-
-.serviceText__color {
-  background: rgba(40, 47, 53, 0.5);
+  padding: 0 10px 10px 10px;
 }
 
 @media screen and (min-width: 769px) {
