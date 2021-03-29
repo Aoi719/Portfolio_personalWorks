@@ -11,28 +11,35 @@
   bottom: 50%;
   color: $text-bright-color;
   font-size: $main-title-fz;
-@include lg {
-    bottom: 0;
-    font-size: $lg-main-title-fz;
-    left: 0;
-    padding: 0 0 172px 120px;
-    text-align: left;
-    transform: translate(0, 0);
-  }
   left: 50%;
   position: absolute;
   text-align: center;
   transform: translate(-50%, 50%);
   width: 100%;
+  @include lg {
+    bottom: 120px;
+    font-size: $lg-main-title-fz;
+    left: 172px;
+    text-align: left;
+    transform: translate(0, 0);
+  }
 }
 
 .subTitle {
   display: block;
   font-size: calc(1em - 7px);
+  margin-top: 50px;
+
+  &::before,
+  &::after{
+    content: "～";
+    width: 100%;
+    height: 100%;
+  }
 
 @include lg {
     font-size: calc(1em - 28px);
-  }  margin-top: 50px;
+  }
 }
 
 //各セクションh2（各見出し）隣の横棒
@@ -255,6 +262,10 @@ h2.dark {
   position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
+  background: rgba(40, 47, 53, 0.5);
+  &__color{
+    background: rgba(40, 47, 53, 0.5);
+  }
   @include lg {
     font-size: $lg-service-fz;
   }
