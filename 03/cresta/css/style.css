@@ -380,6 +380,7 @@ h2.dark::after {
 .lead {
   font-size: calc(1em + 4px);
   font-weight: bold;
+  line-height: 1.8;
   padding: 50px 0 30px 0;
   text-align: center;
 }
