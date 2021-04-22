@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JavaScriptを使ったクイズゲームの詳細ページです。">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/html5doctor.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- favicon -->
+  <link rel="icon" src="/favicon.ico">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap" rel="stylesheet">
+
+  <!-- OGP -->
+  <meta property="og:url" content=" ページの URL" /><!-- 絶対パス -->
+  <meta property="og:title" content="【Webアプリ】クイズゲーム - 作品一覧 | Aoi's Portfolio" />
+  <meta property="og:description" content="JavaScriptを使ったクイズゲームの詳細ページです。" />
+  <meta property="og:image" content=" サムネイル画像の URL" /><!-- 絶対パス -->
+  <meta property="og:site_name" content="Aoi's Portfolio" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@aoi_web_719" />
+
+  <title>【Webアプリ】クイズゲーム - 作品一覧 | Aoi's Portfolio</title>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="headerWrap">
+      <!-- logo -->
+      <h1 class="logo">
+        <a href="../index.html" class="logo__link">
+          <div class="logo__figure"><img src="../images/logo.png" alt="西　葵のポートフォリオサイト" class="logo__img"></div>
+          <p class="logo__text"><span class="logo__copy">aoi's portfolio</span></p>
+        </a>
+      </h1>
+
+      <!-- navigation -->
+      <nav class="nav">
+        <ul class="navList">
+          <li class="navList__item"><a href="../index.html" class="navList__link">ホーム</a></li>
+          <li class="navList__item"><a href="../index.html#works" class="navList__link">作品集</a></li>
+          <li class="navList__item"><a href="../index.html#output" class="navList__link">アウトプット</a></li>
+          <li class="navList__item"><a href="../index.html#profile" class="navList__link">プロフィール</a></li>
+          <li class="navList__item"><a href="../index.html#contact" class="navList__link">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <!-- /.headerWrap --></div>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="../index.html" class="breadcrumb__link">ホーム</a></li>
+        <!-- <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">作品集</a></li> -->
+        <li class="breadcrumb__item">【Webアプリ】クイズゲーム</li>
+      </ol>
+    <!-- /. breadcrumb --></div>
+  </header>
+
+
+  <!-- main -->
+  <main class="underMain works--under">
+    <!-- mainVisual -->
+    <div class="mainVisual mainVisual--works02">
+      <h1 class="mainVisual__title"><span class="labelling">【Webアプリ】</span><br>クイズゲーム</h1>
+    </div>
+
+    <div class="wrap">
+        <section class="section summary">
+          <h2 class="section__title">作品について</h2>
+          <div class="section__contents">
+            <h3 class="h3--deco">概要</h3>
+            <p class="works01__copy">YouTubeにてJavaScriptを学んだ際に作成したクイズゲームです。</p>
+            <p class="works01__copy">オリジナルはBootstrapのデザインを使用した簡素なものでした。</p>
+            <p class="works01__copy">そのままではただ動画を観て写経しただけになってしまうので、自分なりの工夫を凝らしたいと考えました。その結果、キャラクターの動作を追加することを思いつき、正解・不正解に応じてキャラクターが喜んだり悲しんだりする動きを加えました。</p>
+            <p class="works01__copy">setAttributeで画像を指定し、if構文の条件分岐によって出しわけています。このキャラクターの部分は自分で分岐条件を考え記述しました。最初は不正解なのにキャラクターが喜んでしまったり、全問正解なのに悲しんでしまったりと実装に苦労した点もありましたが、最終的にはうまくいきました。</p>
+            <p class="works01__copy">また、デザインも自分で考えたものに変更しています。ボタンを大きめにして押しやすくしたり、HTML版とCSS版の各クイズへの扉ページを作成したりしました。そして言うまでもありませんが、レスポンシブにも対応済みです。</p>
+          <!-- /.section__contents --></div>
+          <div class="section__contents">
+            <h3 class="h3--deco">制作時間</h3>
+            <p class="works01__copy">〇日間（１日平均作業時間：▽時間）</p>
+          <!-- /.section__contents --></div>
+          <div class="linkBox">
+            <button class="btn linkBoxBtn"><a href="https://aoi719.github.io/Portfolio_personalWorks/02/quizGame/" target="_blank" rel="noopener noreferrer" class="btn__link linkBoxBtn__link"><span>作品を見る&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
+          <!-- /.linkBox --></div>
+          </section>
+
+          <section class="section images">
+            <div class="section__contents">
+              <h2 class="section__title">作品イメージ<span class="section__title--small">（抜粋）</span></h2>
+                <section class="worksImageBox">
+                  <div class="section__contents">
+                    <div class="worksImage--block">
+                     <figure class="worksImage__figure"><img src="images/quiz_pc_top.png" alt="クイズゲーム　トップ" class="worksImage__image"></figure>
+                    <!-- /.worksImage --></div>
+                    <div class="worksImage">
+                      <figure class="worksImage__figure"><img src="images/quiz_pc_under.png" alt="クイズゲーム　下層" class="worksImage__image"></figure>
+                      <figure class="worksImage__figure"><img src="images/quiz_pc_result.png" alt="クイズゲーム　結果画面" class="worksImage__image">
+                      </figure>
+                    <!-- /.worksImage --></div>
+                  <!-- /.section__contents --></div>
+                <!-- /.worksImage --></section>
+          <!-- /.section__contents --></div>
+        <!-- /.images --></section>
+
+          <section class="section links">
+            <h2 class="section__title">リンク</h2>
+            <div class="section__contents">
+              <div class="linkBox">
+                <button class="btn linkBoxBtn"><a href="https://aoi719.github.io/Portfolio_personalWorks/02/quizGame/" target="_blank" rel="noopener noreferrer" class="btn__link linkBoxBtn__link"><span>&nbsp;<i class="fas fa-external-link-alt"></i>作品を見る</span></a></button>
+              <!-- /.linkBox --></div>
+              <div class="WorksBtnContainer">
+                <button class="btn WorksBox__btn"><a href="https://webdesign-progress-diary.com/personal-works/quizgame/" target="_blank" rel="noopener noreferrer" class="btn__link WorksBox__link"><span>ブログで解説記事を読む&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
+                <button class="btn WorksBox__btn"><a href="https://github.com/Aoi719/Portfolio_personalWorks/tree/main/02/quizGame" target="_blank" rel="noopener noreferrer" class="btn__link WorksBox__link"><span>GitHubでソースを見る&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
+            <!-- /.WorksBtnContainer --></div>
+          <!-- /.section__contents --></div>
+        <!-- /.links --></section>
+    <!-- /.wrap --></div>
+  </main>
+
+  <!-- toTopBtn -->
+  <div class="toTop"><a href="#" class="toTop__btn"><i class="fas fa-caret-square-up toTop__icon"></i></a></div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <!-- copyright -->
+    <p class="copyright"><small class="copyright__item">&copy;Aoi Nishi 2021</small></p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
