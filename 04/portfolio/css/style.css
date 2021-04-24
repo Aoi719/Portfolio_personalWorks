@@ -730,6 +730,13 @@ TOP
   margin-top: 40px;
 }
 
+@media screen and (min-width: 992px) {
+  .data {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .data__title {
   font-size: calc(1em + 4px);
   margin-right: 10px;
@@ -740,10 +747,8 @@ TOP
 }
 
 @media screen and (min-width: 992px) {
-  .data {
+  .home .data {
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -768,30 +773,6 @@ TOP
 .job__annotation {
   font-size: 0.9em;
   margin-left: 14px;
-}
-
-/* 経歴 */
-.dataList {
-  padding: 5px;
-}
-
-.dataList__term {
-  float: left;
-  clear: both;
-  margin: 5px 15px 0 0;
-}
-
-.dataList__desc {
-  float: left;
-  margin-top: 5px;
-}
-
-.dataList__annotation {
-  font-size: 0.9em;
-}
-
-.data__copy {
-  margin-top: 20px;
 }
 
 .pointBox {
@@ -822,6 +803,10 @@ TOP
 .pointBoxList__item {
   list-style: disc inside;
   margin-top: 20px;
+}
+
+.pointBoxList__item p {
+  margin-top: 10px;
 }
 
 .linkBox {
@@ -935,7 +920,6 @@ TOP
 
 /* skill */
 .skillTable {
-  max-width: 1000px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -991,6 +975,34 @@ tr:nth-child(4) th {
 
 .w-70 {
   width: 70%;
+}
+
+.underMain .data {
+  width: inherit;
+}
+
+/* 経歴 */
+.dataList {
+  padding: 5px;
+}
+
+.dataList__term {
+  float: left;
+  clear: both;
+  margin: 5px 15px 0 0;
+}
+
+.dataList__desc {
+  float: left;
+  margin-top: 5px;
+}
+
+.dataList__annotation {
+  font-size: 0.9em;
+}
+
+.data__copy {
+  margin-top: 20px;
 }
 
 /* 趣味 */
