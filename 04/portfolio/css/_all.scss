@@ -1,0 +1,456 @@
+/*-------------
+for All
+--------------*/
+
+/* elements default */
+* {
+  box-sizing: border-box;
+  line-height: 1.8;
+  letter-spacing: 0.09em;
+}
+
+body{
+  background: $base-color;
+  color: $text-color;
+  font-family: $default-ff;
+  position: relative;
+}
+
+body{
+  @include sm{
+    font-size: $sp-text;
+  }
+  @include lg{
+    font-size: $pc-text;
+  }
+}
+
+main{
+  @include sm{
+    padding-top: 150px;
+  }
+}
+
+.wrap {
+  @include sm{
+    padding: 0 20px 0;
+  }
+  @include md{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include lg{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+li{
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+rt{
+  font-weight: normal;
+  margin-top: -0.3em;
+  transform: translateY(-0.3em);
+}
+
+button{
+  display: block;
+}
+
+/* adjustment class */
+.fwb {
+  font-weight: bold;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*----------------------------*/
+
+/* header */
+.headerWrap {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: $base-color;
+  box-shadow: $shadow;
+  @include lg {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  @include lg{
+    padding-left: 20px;
+  }
+  &__link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: $text-color;
+  }
+  &__figure{
+    padding: 10px 0;
+    width: 70px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &__text {
+    align-self: center;
+    font-size: $sp-catch-copy;
+    // text-transform: capitalize;
+    font-family: $heading-ff;
+    @include lg{
+      font-size: $pc-catch-copy;
+    }
+  }
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  &__item {
+    flex: 1 1;
+    background: $main-color;
+    &:not(:first-of-type){
+      border-left: 2px solid $base-color;
+    }
+  }
+  &__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: $base-color;
+    font-size: $pc-nav-menu;
+    font-weight: bold;
+    font-family: $heading-ff;
+    text-transform: capitalize;
+  }
+}
+
+.navList__item {
+  @include lg {
+    width: calc((100vw - 50vw) / 5);
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
+
+.navList__link{
+  @include sm{
+    padding: 15px 3px;
+    font-size: $sp-nav-menu;
+    line-height: 1;
+  }
+  @include lg{
+    padding: 30px 0;
+  }
+}
+
+/* breadcrumb */
+.breadcrumb{
+  box-shadow: $shadow;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    text-transform: capitalize;
+  }
+}
+
+.breadcrumb{
+  padding: 0 0 0 60px;
+  @include sm{
+    padding-top: 155px;
+    padding-left: 5px;
+  }
+  @include md{
+    padding-top: 130px;
+  }
+  @include lg{
+    padding-top: 100px;
+  }
+}
+
+.breadcrumb__item:not(:last-child){
+  &::after{
+    content:">";
+    margin: 0 10px;
+  }
+}
+
+/* mainvisual */
+.mainVisual{
+  overflow: hidden;
+  position: relative;
+  background: no-repeat center/cover;
+  @include lg{
+    height: 600px;
+  }
+  @include md{
+    height: 500px;
+  }
+  @include sm{
+    height: 300px;
+  }
+  &__title{
+    // text-transform: capitalize;
+    color: $base-color;
+    font-size: $sp-main-title;
+    font-family: $heading-ff;
+    @include lg{
+      font-size: $pc-main-title;
+    }
+  }
+}
+
+/* MainVisual Image */
+.mainVisual{
+  &--top{
+    background-image: url(../images/mainvisual.jpg);
+  }
+  &--profile{
+   background-image: url(../images/mainvisual.jpg);
+  }
+  &--works01{
+   background-image: url(../works/images/mv-muzicSchool.jpg);
+  }
+  &--works02{
+   background-image: url(../works/images/mv_quiz.png);
+   background-position: top center;
+  }
+  &--works03{
+   background-image: url(../works/images/mv-fakegreen.jpg);
+   background-position: top center;
+  }
+}
+
+.labelling{
+  background: $accent-color;
+  color: $base-color;
+  font-size: $labelling-fz;
+  padding:10px 0;
+}
+
+/* トップページメインビジュアルタイトル */
+.home .mainVisual{
+  @include sm{
+    height: 700px;
+  }
+  @include md{
+    top: 25px;
+  }
+}
+.topMvWrap{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  max-width: 1200px;
+  width: 100%;
+  @include sm{
+    display: block;
+    padding: 0 20px;
+  }
+  @include md{
+    padding: 0 20px;
+  }
+}
+.topMvWrap .mainVisual__title{
+  align-self: center;
+  @include sm{
+    text-align: center;
+  }
+}
+.mainVisualList{
+  background:$base-color-a;
+  max-width: 700px;
+  padding: 20px;
+  &__term{
+    position: relative;
+    background: $main-color-a-2;
+    margin-top: 5px;
+    padding: 3px 3px 3px 10px;
+  }
+  &__annotation{
+    font-size: $annotation-fz;
+  }
+}
+
+.mainVisualInnerList{
+  padding-left: 1em;
+  &__item{
+    list-style: disc inside;
+  }
+}
+
+/*下層ページメインビジュアルタイトル*/
+.underMain{
+  @include sm{
+    padding-top: 0;
+  }
+  .mainVisual__title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include sm{
+      min-width: 7em;
+    }
+  }
+}
+
+/* section */
+.section {
+  margin: 100px 0;
+  &__title{
+    font-family: $heading-ff;
+    font-size: $sp-section-title;
+    border: 1px solid $line-color;
+    padding: 5px 5px 5px 15px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      background: $main-color-a;
+      width: 100%;
+      height: 100%;
+      top: 5px;
+      left: 5px;
+      z-index: -1;
+    }
+    &--small{
+      font-size: 0.5em;
+    }
+    @include lg{
+      font-size: $pc-section-title;
+    }
+  }
+
+  // section contentBox
+  &__contents{
+    margin-top: 40px;
+  }
+}
+
+.section:first-of-type{
+  @include sm{
+  margin: 60px 0;
+  }
+}
+
+/* 見出し装飾 */
+.h3--deco{
+  font-size: $sp-h3-title;
+  padding: 0 0 5px 10px;
+  border-left: 7px solid $main-color;
+  border-bottom: 3px solid $main-color;
+  @include lg{
+    font-size: $pc-h3-title;
+  }
+}
+.h4--deco{
+  font-size: $sp-h4-title;
+  padding: 0 0 0 10px;
+  border-left: 7px solid $main-color;
+  @include lg{
+    font-size: $pc-h4-title;
+  }
+}
+
+/* button */
+.btn{
+  background: $accent-color;
+  color: $base-color;
+  display: block;
+  transition: .2s all;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  font-size: $pc-text;
+  box-shadow: $shadow;
+  &__link{
+    color: $base-color;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    position: relative;
+    z-index: 200;
+  }
+}
+
+.btn{
+  @include sm{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+}
+
+.btn__link span{
+  position: relative;
+  z-index: 100;
+}
+
+.btn::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: $accent-color-2;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  transition: .5s all ease-in-out;
+  transform: translateX(-95%);
+}
+
+.btn:hover::before{
+  transform: translateX(0);
+}
+
+/* toTopBtn */
+.toTop__icon{
+  font-size: $to-top-btn;
+  opacity: 0.8;
+  color: $accent-color;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+/* footer */
+.footer{
+  background: $main-color;
+  color: $base-color;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*----- for All END -------*/

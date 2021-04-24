@@ -1,0 +1,98 @@
+// 変数定義
+
+// カラー
+//base color
+$base-color: #fffafa;
+$base-color-a: #fffafade;
+//main color
+$main-color: #1ca5ab;
+$main-color-a: #1ca4abc9;
+$main-color-a-2: #1ca4ab7e;
+//accent color
+$accent-color: #ab1b5c;
+$accent-color-2: #1bab23;
+
+//text color/line color/shadow color
+$text-color: #333;
+$line-color: #333;
+$shadow-color: #555;
+
+//shadow
+$shadow: 0.3px 0.3px 3px $shadow-color;
+
+//------------------------
+
+// 文字サイズ
+//default
+$sp-text: calc(1em - 2px); // 14
+$pc-text: 1em; // 16
+
+// header
+$sp-catch-copy: calc(1em + 6px); // 22
+$pc-catch-copy: calc(1em + 18px); // 24
+
+$sp-nav-menu: $sp-text; //14
+$pc-nav-menu: calc(1em + 6px); //22
+
+//main
+$sp-mv-text: $sp-text; // 14
+$pc-mv-text: calc(1em + 4px); // 20
+
+$sp-main-title: calc(1em + 34px); // 50
+$pc-main-title: calc(1em + 56px); // 72
+
+$sp-section-title: calc(1em + 20px); // 36
+$pc-section-title: calc(1em + 20px); // 38
+
+$sp-min-title: calc(1em + 20px); // 36
+$pc-min-title: calc(1em + 36px); // 52
+
+$sp-h3-title: calc(1em + 4px); // 20
+$pc-h3-title: calc(1em + 8px); // 24
+
+$sp-h4-title: calc(1em + 2px); // 16
+$pc-h4-title: calc(1em + 4px); // 20
+
+$sp-small-title: calc(1em + 4px); // 20
+$pc-small-title: calc(1em + 8px); // 24
+
+$pc-foot-title: calc(1em + 16px); // 32
+
+// others
+$btn: 1em; // 16
+$annotation-fz: 0.9em;
+$labelling-fz: 0.5em;
+$to-top-btn: calc(1em + 54px); // 60
+
+//name
+$sp-name: calc(1em + 8px); // 24
+$pc-name: calc(1em + 14px); // 30
+
+// footer
+$sp-copyright: calc(1em - 4px); // 12
+$pc-copyright: calc(1em - 2px); // 14
+
+// font-family
+$default-ff: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Meiryo", sans-serif;
+$heading-ff: 'Noto Serif JP', serif;
+
+//------------------------
+
+// media query
+@mixin sm {
+  @media screen and (max-width:576px){
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width:577px) and (max-width:991px){
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width:992px){
+    @content;
+  }
+}

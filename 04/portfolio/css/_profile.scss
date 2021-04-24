@@ -1,0 +1,106 @@
+/*----------------------
+ Profile(配下ページ)
+------------------------*/
+.profile--under {
+  .profileBox{
+    display: flex;
+    @include sm{
+      justify-content: space-around;
+    }
+    @include lg{
+      justify-content: center;
+    }
+  }
+
+  .profileBox__figure{
+    margin: inherit;
+    @include lg{
+      width: 200px;
+    }
+  }
+
+  .profileBox__image{
+    border-radius: 0;
+  }
+
+  .profileBox__text{
+    align-self: center;
+    @include lg{
+      margin-left: 100px;
+    }
+  }
+
+  .nishiaoi{
+    font-size: $sp-name;
+    @include lg {
+      font-size: $pc-name;
+    }
+  }
+}
+
+/* skill */
+.skillTable{
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  p:not(:first-child){
+    margin-top: 10px;
+  }
+  li{
+    text-indent: 1em;
+  }
+}
+
+th,td{
+  border-collapse: collapse;
+  padding: 10px 10px 10px 15px;
+  border-top: 3px solid $base-color;
+}
+
+th{
+  background: #8ed0d3;
+  position: relative;
+  z-index: 10;
+}
+
+td{
+  position: relative;
+  background: #ededed;
+}
+
+td::before{
+    content: "";
+    width: 28px;
+    height: 28px;
+    top: 50%;
+    left: -18px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    background: #8ed0d3;
+    position: absolute;
+}
+
+tr:nth-child(1) th,
+tr:nth-child(4) th{
+  background: $main-color-a;
+  color: $base-color;
+  font-size: $pc-small-title;
+}
+
+//col調整用
+.w-30{
+  width: 30%;
+}
+.w-70{
+  width: 70%;
+}
+
+/* 趣味 */
+.hobby li{
+  list-style-type: disc;
+  margin: 20px 0 0 20px;
+}
+
+.like__copy{
+  margin-top: 20px;
+}
