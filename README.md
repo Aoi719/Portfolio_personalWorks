@@ -14,3 +14,7 @@ https://aoi719.github.io/Portfolio_personalWorks/02/quizGame/
 - フェイクグリーン専門店サイト（クリスタ配布カンプからのコーディング※画像・テキストはオリジナル）
 
 https://aoi719.github.io/Portfolio_personalWorks/03/cresta/index.html
+
+- ポートフォリオサイト
+
+https://nishiaoi.work/
