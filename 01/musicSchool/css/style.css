@@ -152,6 +152,11 @@ header {
 
 .head_logo a {
   text-decoration: none;
+  display: block;
+}
+
+.head_title{
+  vertical-align: 30px;
 }
 
 header ul {
