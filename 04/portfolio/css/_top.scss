@@ -17,11 +17,9 @@ TOP
 }
 
 .worksBox{
-  // border: 1px solid $line-color;
   box-shadow: $shadow;
   &__text{
     padding: 20px;
-    // border-top: 1px solid $line-color;
   }
   &__title{
     font-weight: bold;
