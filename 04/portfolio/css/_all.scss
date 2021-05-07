@@ -113,7 +113,6 @@ button{
   &__text {
     align-self: center;
     font-size: $sp-catch-copy;
-    // text-transform: capitalize;
     font-family: $heading-ff;
     @include lg{
       font-size: $pc-catch-copy;
@@ -211,7 +210,6 @@ button{
     height: 300px;
   }
   &__title{
-    // text-transform: capitalize;
     color: $base-color;
     font-size: $sp-main-title;
     font-family: $heading-ff;
