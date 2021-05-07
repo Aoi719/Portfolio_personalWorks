@@ -309,6 +309,11 @@ button {
   background-position: top center;
 }
 
+.mainVisual--works04 {
+  background-image: url(../works/images/mv_portfoliosite.jpg);
+  background-position: center;
+}
+
 .labelling {
   background: #ab1b5c;
   color: #fffafa;
