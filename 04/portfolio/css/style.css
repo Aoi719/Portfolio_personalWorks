@@ -295,6 +295,10 @@ button {
   background-image: url(../images/mainvisual.jpg);
 }
 
+.mainVisual--worksIndex {
+  background-image: url(../images/mainvisual.jpg);
+}
+
 .mainVisual--works01 {
   background-image: url(../works/images/mv-muzicSchool.jpg);
 }
