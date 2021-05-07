@@ -1029,6 +1029,10 @@ tr:nth-child(4) th {
 /*----------------------
  Works(配下ページ)
 ------------------------*/
+.works--under .worksBox {
+  margin-bottom: 40px;
+}
+
 .works--under .works01__copy {
   margin-top: 20px;
 }
