@@ -1135,6 +1135,10 @@ tr:nth-child(4) th {
   }
 }
 
+/*-------------
+ TOPページ
+--------------*/
+/*h1タイトル（タイピングアニメーション） */
 #h1Type {
   position: relative;
   -webkit-animation: typingAnime 7s steps(7) infinite;
@@ -1175,6 +1179,31 @@ tr:nth-child(4) th {
 }
 
 @-webkit-keyframes blinkCursor {
+  0%, 39% {
+    opacity: 0;
+  }
+  40%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 39% {
+    opacity: 0;
+  }
+  40%, 100% {
+    opacity: 1;
+  }
+}
+
+/* その場でフワッと表示 */
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
+}
+
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -1183,12 +1212,49 @@ tr:nth-child(4) th {
   }
 }
 
-@keyframes blinkCursor {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
+}
+
+/* 下からフワッと表示 */
+.fadeUp {
+  opacity: 0;
+  -webkit-animation: fadeUp 1s forwards;
+          animation: fadeUp 1s forwards;
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#delayAnimation {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

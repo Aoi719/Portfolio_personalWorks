@@ -67,7 +67,7 @@
     <div class="mainVisual mainVisual--top">
       <div class="topMvWrap">
         <h1 class="mainVisual__title" id="h1Type">aoi.work</h1>
-        <div class="mainVisualBox" id="js-fade">
+        <div class="mainVisualBox" id="delayAnimation">
           <dl class="mainVisualList clearfix">
             <dt class="mainVisualList__term">職業</dt>
             <dd class="mainVisualList__data">Webコーダー</dd>
@@ -98,7 +98,7 @@
         <h2 class="section__title" id="works">作品集</h2>
         <div class="section__contents">
           <div class="worksContainer">
-            <div class="worksBox">
+            <div class="worksBox fadeUpTrigger">
               <div class="worksBox__item">
                 <div class="worksBox__figure">
                   <img
@@ -131,7 +131,7 @@
               </div>
               <!-- /. worksBox -->
             </div>
-            <div class="worksBox">
+            <div class="worksBox fadeUpTrigger">
               <div class="worksBox__item">
                 <div class="worksBox__figure">
                   <img src="images/02-quizeGame.gif" alt="クイズゲーム" class="worksBox__image">
@@ -146,7 +146,7 @@
                 </div>
               <!-- /. worksBox__item --></div>
             <!-- /. worksBox --></div>
-            <div class="worksBox">
+            <div class="worksBox fadeUpTrigger">
               <div class="worksBox__item">
                   <div class="worksBox__figure">
                     <img src="images/03-cresta.jpg" alt="観葉植物店架空サイト（クリスタデザインカンプコーディング）" class="worksBox__image">
@@ -162,7 +162,7 @@
                 <!-- /. worksBox__item --></div>
             <!-- /. worksBox --></div>
           <!-- /. worksContainer --></div>
-          <button class="btn worksBox__btn"><a href="works/index.html" class="btn__link"><span>作品一覧を見る</span></a></button>
+          <button class="btn worksBox__btn fadeUpTrigger"><a href="works/index.html" class="btn__link"><span>作品一覧を見る</span></a></button>
           <!-- /. section__contents --></div>
       </section>
 
@@ -170,7 +170,7 @@
       <section class="section output">
         <h2 class="section__title" id="output">アウトプット</h2>
         <div class="section__contents outputContainer">
-          <div class="outputBox">
+          <div class="outputBox fadeUpTrigger">
             <div class="outputBox__item blog">
               <h3 class="outputBox__title">Blog</h3>
               <a href="https://webdesign-progress-diary.com/" target="_blank" rel="noopener noreferrer">
@@ -179,7 +179,7 @@
             <!-- /. outputBox__item blog --></div>
             <button class="btn outputBox__btn"><a href="https://webdesign-progress-diary.com/" target="_blank" rel="noopener noreferrer" class="btn__link"><span>ブログを読む&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
           <!-- /. outputBox --></div>
-          <div class="outputBox">
+          <div class="outputBox fadeUpTrigger">
             <div class="outputBox__item twitter">
               <h3 class="outputBox__title">Twitter</h3>
               <a class="twitter-timeline twitter__item" data-width="100%" data-height="100%" data-theme="light" href="https://twitter.com/aoi_web_719?ref_src=twsrc%5Etfw">Tweets by aoi_web_719</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -188,23 +188,23 @@
           <!-- /. outputBox --></div>
         <!-- /. section__contents --></div>
       </section>
-  
+
       <!-- Profile -->
       <section class="section profile">
         <h2 class="section__title" id="profile">プロフィール</h2>
-        <div class="section__contents profileBox">
+        <div class="section__contents profileBox fadeInTrigger">
           <div class="profileBox__figure">
             <img src="images/profile.jpg" alt="西　葵の写真" class="profileBox__image">
           </div>
-  
+
           <!-- 名前・現在の業務 -->
           <section class="data">
-            <h3 class="data__title nishiaoi"><ruby><rb>西</rb><rt>にし</rt>　<rb>葵</rb><rt>あおい</rt></ruby></h3>
-            <div class="pointBox">
+            <h3 class="data__title nishiaoi fadeInTrigger"><ruby><rb>西</rb><rt>にし</rt>　<rb>葵</rb><rt>あおい</rt></ruby></h3>
+            <div class="pointBox fadeInTrigger">
               <p class="pointBox__title">3つのヒューマンスキル</p>
                 <ul class="pointBoxList">
                   <li class="pointBoxList__item"><strong>問題提起→解決策の思案→解決策の提案</strong><br>「業務を進めるうえでの問題点の発見」<br>「問題を解決するための方法を思案」<br>「解決策を提案し実行する」
-                   <p>PDCAを回しながら仕事ができます。</p></li>
+                    <p>PDCAを回しながら仕事ができます。</p></li>
                   <li class="pointBoxList__item"><strong>綿密な報連相</strong><br>「業務における作業状況のコンスタントな報告」<br>「問題が発生した場合の早急な連絡」<br>「常に改善案を考え、相談する」
                   <p>豊富なコミュニケーションがプロジェクトの成功には欠かせないと考えています。</p></li>
                   <li class="pointBoxList__item"><strong>教育やリーダーシップ面での経験</strong><br>
@@ -225,7 +225,7 @@
           <!-- /. 名前・現在の業務 --></section>
           <p class="data">経歴、スキルセットやその他の趣味などは、プロフィールページをご覧ください。</p>
           <div class="linkBox">
-            <button class="btn linkBoxBtn"><a href="profile.html" class="btn__link linkBoxBtn__link"><span>プロフィールページを見る</span></a></button>
+            <button class="btn linkBoxBtn fadeUpTrigger"><a href="profile.html" class="btn__link linkBoxBtn__link"><span>プロフィールページを見る</span></a></button>
           </div>
         <!-- /. section__contents --></div>
       </section>
@@ -237,8 +237,8 @@
           <p class="contact__copy">お問い合わせ、お仕事のご依頼・ご相談は下記より受け付けております。</p>
           <p class="contact__copy">お気軽にご連絡ください。</p>
           <div class="contactBtnContainer">
-            <button class="btn contactBox__btn"><a href="https://webdesign-progress-diary.com/inquiry/" target="_blank" rel="noopener noreferrer" class="btn__link contactBox__link"><span>メールフォーム&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
-            <button class="btn contactBox__btn"><a href="https://twitter.com/aoi_web_719" target="_blank" rel="noopener noreferrer" class="btn__link contactBox__link"><span><img src="images/twitter-logo-white.gif" alt="Twitter" class="contactBox__image">&nbsp;TwitterDM&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
+            <button class="btn contactBox__btn fadeUpTrigger"><a href="https://webdesign-progress-diary.com/inquiry/" target="_blank" rel="noopener noreferrer" class="btn__link contactBox__link"><span>メールフォーム&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
+            <button class="btn contactBox__btn fadeUpTrigger"><a href="https://twitter.com/aoi_web_719" target="_blank" rel="noopener noreferrer" class="btn__link contactBox__link"><span><img src="images/twitter-logo-white.gif" alt="Twitter" class="contactBox__image">&nbsp;TwitterDM&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
           </div>
           <p class="contact__copy">※大変恐れ入りますが、「メールフォーム」につきましては私のブログに併設しているお問い合わせフォームへジャンプいたします。なお、プライバシーポリシーにつきましてはブログ掲載分に準拠いたします（リンク先のフォームにてご確認いただけます）。</p>
         <!-- /. section__contents --></div>

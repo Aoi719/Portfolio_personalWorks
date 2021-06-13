@@ -1,3 +1,8 @@
+/*-------------
+ TOPページ
+--------------*/
+
+/*h1タイトル（タイピングアニメーション） */
 #h1Type {
   position: relative;
   animation: typingAnime 7s steps(7) infinite;
@@ -26,11 +31,50 @@
 }
 
 @keyframes blinkCursor {
-  0% {
+  0%,39% {
     opacity: 0;
   }
 
+  40%,100% {
+    opacity: 1;
+  }
+}
+
+/* その場でフワッと表示 */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
 }
+
+/* 下からフワッと表示 */
+.fadeUp {
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//h1横のテキストボックス非表示
+#delayAnimation {
+  opacity: 0;
+}
+
+
