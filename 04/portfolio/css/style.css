@@ -787,6 +787,10 @@ TOP
   margin-left: 14px;
 }
 
+.job__copy:not(:first-child) {
+  margin-top: 20px;
+}
+
 .pointBox {
   margin: 40px 0;
   position: relative;

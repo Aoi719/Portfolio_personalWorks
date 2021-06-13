@@ -161,6 +161,9 @@ TOP
     font-size: $annotation-fz;
     margin-left: 14px;
   }
+  &__copy:not(:first-child){
+    margin-top: 20px;
+  }
 }
 
 
