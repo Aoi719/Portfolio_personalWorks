@@ -1,0 +1,36 @@
+#h1Type {
+  position: relative;
+  animation: typingAnime 7s steps(7) infinite;
+  overflow: hidden;
+}
+
+@keyframes typingAnime {
+  0%, 95%, 100% {
+    width: 0;
+  }
+  20%, 90% {
+    width: 349.91px;
+  }
+}
+
+#h1Type::before {
+  content: "";
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: $base-color;
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
