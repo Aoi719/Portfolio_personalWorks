@@ -1,0 +1,42 @@
+@use 'variables' as v;
+
+  //glass
+  @mixin glass() {
+    backdrop-filter: v.$blur;
+    border-radius: v.$bdrs;
+    box-shadow: v.$shadow;
+    background: rgba(230,247,255,0.2);
+  }
+
+  //gradation
+  @mixin gRedtoBlue {
+    background-color: #0073a8;
+    background-image: linear-gradient(45deg, #0073a8 0%, #7b44bf 50%, #a8001f 99%);
+  }
+
+  @mixin gBluetoGreen {
+    background-color: #27bd92;
+    background-image: linear-gradient(0deg, #08AEEA 28%, #27bd92 62%, #2AF598 97%);
+  }
+
+  @mixin gRedtoYellow {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  }
+
+  // media queries
+  @mixin pc {
+    @media screen and (min-width:900px) {
+      @content;
+    }
+  }
+  @mixin tab {
+    @media screen and (min-width:746px) and (max-width:899px) {
+      @content;
+    }
+  }
+  @mixin sp {
+    @media screen and (max-width:745px) {
+      @content;
+    }
+  }
