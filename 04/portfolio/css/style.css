@@ -319,6 +319,10 @@ button {
   background-position: center;
 }
 
+.mainVisual--works05 {
+  background-image: url(../works/images/mv-aquarium.jpg);
+}
+
 .labelling {
   background: #ab1b5c;
   color: #fffafa;
