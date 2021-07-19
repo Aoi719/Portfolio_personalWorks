@@ -28,6 +28,9 @@ TOP
   &__copy{
     margin-top: 10px;
   }
+  @include lg {
+    display: flex;
+  }
 }
 
 .worksBox__item{

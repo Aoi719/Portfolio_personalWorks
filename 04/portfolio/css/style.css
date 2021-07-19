@@ -600,6 +600,14 @@ TOP
   margin-top: 10px;
 }
 
+@media screen and (min-width: 992px) {
+  .worksBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 577px) and (max-width: 991px) {
   .worksBox__item {
     margin-top: 40px;
