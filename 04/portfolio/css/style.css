@@ -1049,6 +1049,12 @@ tr:nth-child(4) th {
   display: flex;
 }
 
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .works--under .worksBox__item {
+    margin-top: 0;
+  }
+}
+
 .works--under .works01__copy {
   margin-top: 20px;
 }
@@ -1150,8 +1156,10 @@ tr:nth-child(4) th {
   }
 }
 
-.works--under .worksBox.dummy {
-  visibility: hidden;
+@media screen and (min-width: 992px) {
+  .works--under .worksBox.dummy {
+    visibility: hidden;
+  }
 }
 
 /*-------------

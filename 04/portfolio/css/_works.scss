@@ -30,6 +30,11 @@
     margin-bottom: 40px;
     display: flex;
   }
+  .worksBox__item{
+    @include md{
+      margin-top: 0;
+    }
+  }
   .works01__copy{
     margin-top: 20px;
   }
@@ -91,7 +96,7 @@
   }
 
   // PCのみ、カードが2つの場合はダミーを置いて位置を調整する
-  @include pc {
+  @include lg {
     .worksBox.dummy {
       visibility: hidden;
     }
