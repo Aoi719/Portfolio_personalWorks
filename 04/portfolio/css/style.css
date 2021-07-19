@@ -300,29 +300,6 @@ button {
   background-image: url(../images/mainvisual.jpg);
 }
 
-.mainVisual--works01 {
-  background-image: url(../works/images/mv-muzicSchool.jpg);
-}
-
-.mainVisual--works02 {
-  background-image: url(../works/images/mv_quiz.png);
-  background-position: top center;
-}
-
-.mainVisual--works03 {
-  background-image: url(../works/images/mv-fakegreen.jpg);
-  background-position: top center;
-}
-
-.mainVisual--works04 {
-  background-image: url(../works/images/mv_portfoliosite.jpg);
-  background-position: center;
-}
-
-.mainVisual--works05 {
-  background-image: url(../works/images/mv-aquarium.jpg);
-}
-
 .labelling {
   background: #ab1b5c;
   color: #fffafa;
@@ -656,6 +633,7 @@ TOP
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 20px 20px;
+  margin-top: auto;
 }
 
 .worksLinkBtn__btn {
@@ -1035,11 +1013,40 @@ tr:nth-child(4) th {
   margin-top: 20px;
 }
 
+/*--------------------------------
+ Works(配下ページ)のメインビジュアル
+----------------------------------*/
+.mainVisual--works01 {
+  background-image: url(../works/images/mv-muzicSchool.jpg);
+}
+
+.mainVisual--works02 {
+  background-image: url(../works/images/mv_quiz.png);
+  background-position: top center;
+}
+
+.mainVisual--works03 {
+  background-image: url(../works/images/mv-fakegreen.jpg);
+  background-position: top center;
+}
+
+.mainVisual--works04 {
+  background-image: url(../works/images/mv_portfoliosite.jpg);
+  background-position: center;
+}
+
+.mainVisual--works05 {
+  background-image: url(../works/images/mv-aquarium.jpg);
+}
+
 /*----------------------
  Works(配下ページ)
 ------------------------*/
 .works--under .worksBox {
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .works--under .works01__copy {
@@ -1141,6 +1148,10 @@ tr:nth-child(4) th {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.works--under .worksBox.dummy {
+  visibility: hidden;
 }
 
 /*-------------
