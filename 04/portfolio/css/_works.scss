@@ -28,6 +28,7 @@
 .works--under{
   .worksBox{
     margin-bottom: 40px;
+    display: flex;
   }
   .works01__copy{
     margin-top: 20px;
@@ -86,6 +87,13 @@
       margin-right: auto;
       display: flex;
       justify-content: space-between;
+    }
+  }
+
+  // PCのみ、カードが2つの場合はダミーを置いて位置を調整する
+  @include pc {
+    .worksBox.dummy {
+      visibility: hidden;
     }
   }
 }
