@@ -14,6 +14,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
+
 @media screen and (max-width: 745px) {
   body {
     font-size: calc(1rem - 2px);
@@ -35,6 +36,7 @@ h2 {
 .sectionTitle {
   margin-bottom: 50px;
 }
+
 
 .pc-hide {
   display: none;
@@ -125,6 +127,7 @@ h2 {
   color: #fff;
   position: relative;
 }
+
 @media screen and (max-width: 745px) {
   .headerWrap {
     padding: 10px;
@@ -140,6 +143,8 @@ h2 {
 
 .logoBox {
   width: 30%;
+
+  width: 50%;
 }
 
 .logo {
@@ -151,6 +156,7 @@ h2 {
   transition: 0.7s;
   line-height: 1;
 }
+
 @media screen and (max-width: 745px) {
   .logo {
     font-size: calc(1rem - 2px);
@@ -173,16 +179,19 @@ h2 {
           align-items: center;
   width: 30%;
 }
+
 @media screen and (max-width: 745px) {
   .headNavBox {
     width: 60%;
   }
 }
 
+
 .header select {
   padding: 10px;
   background: #e6f7ff;
 }
+
 @media screen and (max-width: 745px) {
   .header select {
     font-size: 12px;
@@ -196,6 +205,7 @@ h2 {
   transition: 0.7s;
   padding: 10px;
 }
+
 @media screen and (max-width: 745px) {
   .navLink {
     padding: 0;
@@ -206,6 +216,7 @@ h2 {
 .navLink:last-child {
   margin-right: 60px;
 }
+
 @media screen and (max-width: 745px) {
   .navLink:last-child {
     margin-right: 0;
@@ -224,6 +235,7 @@ h2 {
   right: 80px;
   z-index: 9999;
 }
+
 @media screen and (max-width: 745px) {
   .hamburger {
     right: 150px;
@@ -238,6 +250,7 @@ h2 {
   color: #fff;
   cursor: pointer;
 }
+
 @media screen and (max-width: 745px) {
   .hamburger button {
     width: 40px;

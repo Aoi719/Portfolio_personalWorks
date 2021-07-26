@@ -109,7 +109,6 @@ h2 {
   padding: 10px 20px 15px;
   color: #fff;
   position: relative;
-
   @include m.sp {
     padding: 10px;
     justify-content: flex-start;
@@ -122,6 +121,7 @@ h2 {
 
 .logoBox {
   width: 30%;
+  width: 50%;
 }
 
 .logo {
@@ -131,7 +131,6 @@ h2 {
   text-transform: uppercase;
   transition: 0.7s;
   line-height: 1;
-
   @include m.sp {
     font-size: v.$sp-h1-size;
   }
@@ -199,6 +198,8 @@ h2 {
     right: 150px;
   }
 }
+}
+
 .hamburger button {
   background: v.$main-color02;
   padding: 10px;
@@ -206,7 +207,6 @@ h2 {
   border: 1px solid rgba(255,255,255,0.8);
   color: #fff;
   cursor: pointer;
-
   @include m.sp {
     width: 40px;
     height: 40px;

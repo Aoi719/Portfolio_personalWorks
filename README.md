@@ -3,18 +3,22 @@
 作品はすべて個人で自主制作したものです。
 
 ## 公開中の作品
-- 架空の音楽専門学校サイト
+- 架空の音楽専門学校サイト（01）
 
 https://aoi719.github.io/Portfolio_personalWorks/01/musicSchool/
 
-- クイズゲーム
+- クイズゲーム（02）
 
 https://aoi719.github.io/Portfolio_personalWorks/02/quizGame/
 
-- フェイクグリーン専門店サイト（クリスタ配布カンプからのコーディング※画像・テキストはオリジナル）
+- フェイクグリーン専門店サイト（クリスタ配布カンプからのコーディング※画像・テキストはオリジナル）（03）
 
 https://aoi719.github.io/Portfolio_personalWorks/03/cresta/index.html
 
-- ポートフォリオサイト
+- ポートフォリオサイト（04）
 
 https://nishiaoi.work/
+
+- 水族館サイト（05）
+
+https://aoi719.github.io/Portfolio_personalWorks/05/aquarium/
