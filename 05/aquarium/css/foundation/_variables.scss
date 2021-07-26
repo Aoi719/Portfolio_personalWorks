@@ -1,0 +1,49 @@
+// color
+$base-color: #e6f7ff;
+$main-color: #0073a8;
+$main-color-a: #0073a8dc;
+$main-color02: #00aeff;
+$accent-color: #a8001f;
+$accent-color: #a8001fc0;
+
+$text-color: #2b2b2b;
+$border-color: #aaa;
+
+//glass components
+$blur: blur(5px);
+$bdrs: 5px;
+$shadow: inset -0.5px -0.5px 3px rgba(255,255,255,0.5),
+          inset 0.3px 0.3px 2px rgba(255,255,255,0.3),
+          0 0 10px rgba(0,0,0,0.05);
+
+//fonts
+$base-ff: "Helvetica Neue",
+Arial,
+"Hiragino Kaku Gothic ProN",
+"Hiragino Sans",
+Meiryo,
+sans-serif;
+
+$h1-ff: 'Cinzel', serif;
+
+//font-size
+$regular-size: 1rem; //16
+$large-size: calc(1rem + 5px); //21
+$medium-large-size: calc(1rem + 2px); //18
+$small-size: calc(1rem - 2px); //14
+
+$sp-regular-size: calc(1rem - 2px); //14
+$sp-large-size: calc(1rem + 5px); //21
+$sp-medium-large-size: calc(1rem + 2px); //18
+$sp-small-size: calc(1rem - 2px); //14
+
+$logo-size: calc(1rem + 20px); //44
+
+$h1-size: calc(1rem + 56px); //72
+$h2-size: calc(1em + 20px); //36
+$h3-size: calc(1em + 8px); //24
+$sp-h1-size: calc(1rem - 2px); //14
+$sp-h2-size: calc(1em + 20px); //36
+$sp-h3-size: calc(1em + 8px); //24
+
+$menu-name-size: calc(1em + 20px);
