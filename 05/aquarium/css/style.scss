@@ -14,6 +14,10 @@ body {
   letter-spacing: 0.1em;
   line-height: 1.5;
   overflow-x: hidden;
+
+  @include m.sp {
+    font-size: v.$sp-regular-size;
+  }
 }
 
 a {
@@ -30,6 +34,23 @@ h2 {
 
 .sectionTitle {
   margin-bottom: 50px;
+}
+
+.pc-hide {
+  display: none;
+  @include m.tab {
+    display: block;
+  }
+  @include m.sp {
+    display: block;
+  }
+}
+
+.sp-hide {
+  display: block;
+  @include m.sp {
+    display: none;
+  }
 }
 
 /* ボタン */
@@ -88,6 +109,10 @@ h2 {
   padding: 10px 20px 15px;
   color: #fff;
   position: relative;
+  @include m.sp {
+    padding: 10px;
+    justify-content: flex-start;
+  }
 }
 
 .header a {
@@ -95,6 +120,7 @@ h2 {
 }
 
 .logoBox {
+  width: 30%;
   width: 50%;
 }
 
@@ -105,6 +131,9 @@ h2 {
   text-transform: uppercase;
   transition: 0.7s;
   line-height: 1;
+  @include m.sp {
+    font-size: v.$sp-h1-size;
+  }
 }
 
 @include m.pc {
@@ -118,20 +147,38 @@ h2 {
   justify-content: space-around;
   align-items: center;
   width: 30%;
+
+    @include m.sp {
+    width: 60%;
+  }
 }
 
 .header select {
   padding: 10px;
   background: v.$base-color;
+
+  @include m.sp {
+    font-size: 12px;
+    width: 50px;
+    padding: 3px;
+  }
 }
 
 .navLink{
   transition: 0.7s;
   padding: 10px;
+
+  @include m.sp {
+    padding: 0;
+    font-size: 12px;
+  }
 }
 
 .navLink:last-child {
   margin-right: 60px;
+  @include m.sp {
+    margin-right: 0;
+  }
 }
 
 @include m.pc {
@@ -146,6 +193,11 @@ h2 {
   top: 15px;
   right: 80px;
   z-index: 9999;
+
+  @include m.sp {
+    right: 150px;
+  }
+}
 }
 
 .hamburger button {
@@ -155,6 +207,10 @@ h2 {
   border: 1px solid rgba(255,255,255,0.8);
   color: #fff;
   cursor: pointer;
+  @include m.sp {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .hamburger button:focus {

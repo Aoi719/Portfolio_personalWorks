@@ -32,10 +32,20 @@ $large-size: calc(1rem + 5px); //21
 $medium-large-size: calc(1rem + 2px); //18
 $small-size: calc(1rem - 2px); //14
 
+
+$sp-regular-size: calc(1rem - 2px); //14
+$sp-large-size: calc(1rem + 5px); //21
+$sp-medium-large-size: calc(1rem + 2px); //18
+$sp-small-size: calc(1rem - 2px); //14
+
 $logo-size: calc(1rem + 20px); //44
 
 $h1-size: calc(1rem + 56px); //72
 $h2-size: calc(1em + 20px); //36
 $h3-size: calc(1em + 8px); //24
+
+$sp-h1-size: calc(1rem - 2px); //14
+$sp-h2-size: calc(1em + 20px); //36
+$sp-h3-size: calc(1em + 8px); //24
 
 $menu-name-size: calc(1em + 20px);
