@@ -109,6 +109,7 @@ h2 {
   padding: 10px 20px 15px;
   color: #fff;
   position: relative;
+
   @include m.sp {
     padding: 10px;
     justify-content: flex-start;
@@ -121,7 +122,6 @@ h2 {
 
 .logoBox {
   width: 30%;
-  width: 50%;
 }
 
 .logo {
@@ -131,6 +131,7 @@ h2 {
   text-transform: uppercase;
   transition: 0.7s;
   line-height: 1;
+
   @include m.sp {
     font-size: v.$sp-h1-size;
   }
@@ -195,11 +196,12 @@ h2 {
   z-index: 9999;
 
   @include m.sp {
-    right: 150px;
+    top: 7px;
+    right: 7px;
+    width: 40px;
+    height: 40px;
   }
 }
-}
-
 .hamburger button {
   background: v.$main-color02;
   padding: 10px;
@@ -207,33 +209,40 @@ h2 {
   border: 1px solid rgba(255,255,255,0.8);
   color: #fff;
   cursor: pointer;
+
   @include m.sp {
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
   }
 }
 
-.hamburger button:focus {
-  outline: 2px solid #fff;
+@include m.pc{
+  .hamburger button:focus {
+    outline: 2px solid #fff;
+  }
 }
 
-.hamburger span {
+.hamburger span.bar {
   display: block;
   border: 1px solid #fff;
   margin-bottom: 8px;
   transition: 0.4s;
+
+  @include m.sp {
+    margin-bottom: 5px;
+  }
 }
 
-.hamburger.active span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+.hamburger.active span.bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
 }
 
-.hamburger.active span:nth-child(2) {
+.hamburger.active span.bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+.hamburger.active span.bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ヘッダーメニューの中身 */
@@ -434,6 +443,10 @@ h2 {
   justify-content: space-around;
   align-items: center;
   padding: 30px 0;
+
+  @include m.sp {
+    display: block;
+  }
 }
 
 .bottomInfo {
@@ -460,6 +473,10 @@ main {
 .cardBlock {
   display: flex;
   justify-content: space-between;
+
+  @include m.sp {
+    display: block;
+  }
 }
 
 // .cardBlock img {
@@ -696,6 +713,10 @@ main {
   justify-content: center;
   margin-top: 20px;
   font-size: v.$medium-large-size;
+
+  @include m.sp {
+    display: block;
+  }
 }
 
 .addressList {
@@ -769,6 +790,12 @@ main {
   font-size: 80px;
   animation: floatTopBtn 2.5s ease-in-out infinite;
   z-index: 800;
+
+  @include m.sp {
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+  }
 }
 
 .totop a {
