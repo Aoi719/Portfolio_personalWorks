@@ -22,3 +22,7 @@ https://nishiaoi.work/
 - 水族館サイト（05）※2021/8現在、PC版のみです
 
 https://aoi719.github.io/Portfolio_personalWorks/05/aquarium/
+
+- 音楽プレイヤー（06）
+
+https://aoi719.github.io/Portfolio_personalWorks/06/my-music-player/
