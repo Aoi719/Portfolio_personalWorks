@@ -40,8 +40,6 @@ const songList = [
 // 曲名窓の文字数を取得
 function titleMove() {
 	let titleStr = title.textContent.length;
-	// let moveDistance = titleStr + 20 + "px";
-  // console.log(moveDistance);
 
 	if (titleStr >= 9) {
     title.classList.add('active');
@@ -122,7 +120,6 @@ function nextSong() {
 	loadSong(songList[i]);
 	playSong();
 }
-// next.addEventListener('click', nextSong);
 
 next.addEventListener('click', function () {
 	titleMove();

@@ -360,6 +360,13 @@ body {
     border-color: var(--light-black);
   }
 
+  .downside .speaker-inside::before {
+    height: 2px;
+    right: 2.5px;
+    top: 3px;
+    width: 4px;
+  }
+
   .middle-box {
     margin: 0;
     padding: 0 10px;
@@ -413,10 +420,12 @@ body {
   }
 
   .tape-inner {
-    border-width: 5px;
+    border-width: 3px;
+    width: 10px;
+    height: 10px;
   }
 
   .tape-inner:first-child {
-    margin-right: 10px;
+    margin-right: 7px;
   }
 }
