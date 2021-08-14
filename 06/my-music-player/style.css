@@ -1,0 +1,422 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--white);
+  font-size: 2em;
+  min-height: 100vh;
+}
+
+/* -------- 変数 -------- */
+:root {
+  --font-family: 'Play', sans-serif;
+
+  --black: #2b2b2b;
+  --gray: #c5c5c5;
+  --light-black: #585858;
+  --white: #e6e6e6;
+  --yellow: #e1d89f;
+}
+
+/* -------- 調整クラス -------- */
+.circle {
+  border-radius: 50%;
+}
+
+/* -------- music player -------- */
+
+.musicPlayer {
+  left: 50%;
+  width: 856px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grab {
+  border: 7px solid var(--black);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  border-top: 20px solid var(--black);
+  height: 50px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.container {
+  border-bottom: 5px solid rgba(0,0,0,.5);
+  box-shadow: 0 1px 10px rgba(100,100,100,.5);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* スピーカー */
+.speaker {
+  background: rgb(43,43,43);
+  background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(94,94,94,1) 4%, rgba(128,128,128,1) 9%, rgba(150,150,150,1) 16%, rgba(156,156,156,1) 20%, rgba(43,43,43,1) 42%);
+  border: 10px solid var(--gray);
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.speaker.active{
+  animation: speakerSize 1.5s ease infinite;
+}
+
+@keyframes speakerSize {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.speaker-inside {
+  background: var(--black);
+  height: 20%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+
+.speaker-inside::before {
+  background: #fff;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+}
+
+.upside .speaker-inside::before {
+  height: 4px;
+  right: 3px;
+  top: 4px;
+  transform: rotate(45deg);
+  width: 6px;
+}
+
+.downside .speaker-inside::before {
+  height: 8px;
+  right: 7px;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 15px;
+}
+
+/* 上部 */
+.upside {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.upside .speaker-box {
+  background: var(--light-black);
+  flex-shrink: 0;
+  height: 100px;
+  padding: 20px 100px;
+  width: 100px;
+}
+
+.title-box {
+  width: 256px;
+  align-items: center;
+  background: var(--black);
+  display: flex;
+  white-space: nowrap;
+}
+
+.monitor {
+  background: var(--yellow);
+  margin: 0 auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+.title-box h2 {
+  color: var(--light-black);
+  font-size: 1.5em;
+  padding: 5px;
+  width: fit-content;
+}
+
+.title-box h2.active {
+  animation: tslX 12s linear infinite;
+}
+
+@keyframes tslX {
+  0%{
+    transform: translate(0, 0);
+  }
+  50%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(-110%, 0);
+  }
+}
+
+/* 下部 */
+.downside {
+  align-items: center;
+  background: var(--gray);
+  border-left: 10px solid rgba(100,100,100,.3);
+  border-right: 10px solid rgba(100,100,100,.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+}
+
+.downside .speaker-box {
+  height: 250px;
+  width: 250px;
+}
+
+.middle-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.decorations {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.deco {
+  background: var(--light-black);
+  box-shadow: 0 3px 3px rgba(100,100,100,.7);
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+
+.deco::before {
+  background: #fff;
+  border-radius: 50%;
+  content: '';
+  height: 2.5px;
+  position: absolute;
+  right: 2.5px;
+  top: 2px;
+  width: 2.5px;
+}
+
+.deco.large {
+  height: 30px;
+  width: 30px;
+}
+
+.deco.large::before {
+  height: 7px;
+  right: 6px;
+  top: 6px;
+  width: 7px;
+}
+
+/* ボタン */
+.btns {
+  margin: 20px 0;
+}
+
+.button {
+  background: var(--light-black);
+  border: 1px solid;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+  box-sizing: border-box;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.5em;
+  outline: none;
+  padding: 5px 10px;
+  width: 70px;
+}
+
+.button:active, .button.active {
+  box-shadow: inset 0 0 5px 3px rgba(50,50,50,.5);
+}
+
+.button:nth-child(2) {
+  margin: 0 5px;
+}
+
+.button:active ion-icon, .button.active ion-icon {
+  font-size: .95em;
+}
+
+/* カセット挿入口 */
+.tapeBox {
+  box-shadow: 0 2px 5px 2px rgba(50,50,50,.5);
+  height: 150px;
+  position: relative;
+  /* border: 0.1px solid var(--black); */
+  width: 100%;
+}
+
+.tape {
+  align-items: center;
+  background: var(--black);
+  border: 5px solid var(--light-black);
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  margin: 10px auto 0;
+  width: 70%;
+}
+
+.tape-inner {
+  background: var(--black);
+  border: 15px solid var(--white);
+  display: block;
+  height: 15px;
+  width: 15px;
+}
+
+.tape-inner:first-child {
+  margin-right: 20px;
+  position: relative;
+}
+
+.tapeBox::after {
+  border: 10px solid var(--black);
+  bottom: 0;
+  box-sizing: border-box;
+  content: '';
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+
+@media screen and (max-width:800px) {
+  .musicPlayer {
+    width: 300px;
+  }
+
+  .grab {
+    border-top-width: 15px;
+    height: 30px;
+  }
+
+  /* スピーカー */
+  .speaker {
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+
+  /* 上部 */
+  .upside .speaker-inside::before {
+    width: 3px;
+    height: 2px;
+    top: 2px;
+    right: 2px;
+  }
+
+  .upside .speaker-box {
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+  }
+
+  .title-box {
+    width: 120px;
+  }
+
+  .title-box h2 {
+    /* width: 100%; */
+    font-size: 0.8em;
+  }
+
+  /* 下部 */
+  .downside {
+    padding: 10px 5px;
+  }
+
+  .downside .speaker-box {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+  }
+
+  .downside .speaker {
+    border-color: var(--light-black);
+  }
+
+  .middle-box {
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* 飾り */
+  .decorations {
+    width: 90px;
+  }
+
+  .deco.large {
+    width: 20px;
+    height: 20px;
+  }
+
+  .deco.large::before {
+    height: 5px;
+    right: 4px;
+    top: 4px;
+    width: 5px;
+  }
+
+  /* ボタン */
+  .btns {
+    display: flex;
+    margin: 10px 0;
+  }
+
+  .button {
+    width: 30px;
+    height: 30px;
+    padding: 0 0 5px;
+    font-size: 0.75em;
+  }
+
+  .button:nth-child(2) {
+    margin: 0 5px;
+  }
+
+  .tapeBox{
+    height: 70px;
+  }
+
+  .tapeBox::after {
+    border-width: 5px;
+  }
+
+  .tape {
+    height: 30px;
+  }
+
+  .tape-inner {
+    border-width: 5px;
+  }
+
+  .tape-inner:first-child {
+    margin-right: 10px;
+  }
+}
