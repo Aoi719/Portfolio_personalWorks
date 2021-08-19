@@ -95,6 +95,14 @@
     }
   }
 
+  ul{
+    margin-top: 20px;
+  }
+
+  ul li {
+    list-style: disc inside;
+  }
+
   // PCのみ、カードが2つの場合はダミーを置いて位置を調整する
   @include lg {
     .worksBox.dummy {
