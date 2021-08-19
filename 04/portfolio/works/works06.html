@@ -75,25 +75,38 @@
   <!-- main -->
   <main class="underMain works--under">
     <!-- mainVisual -->
-    <div class="mainVisual mainVisual--works05">
+    <div class="mainVisual mainVisual--works06">
       <h1 class="mainVisual__title"><span class="labelling">【Webアプリ】</span><br>ラジカセ</h1>
     </div>
 
     <div class="wrap">
-        <section class="section summary">
-          <h2 class="section__title">作品について</h2>
-          <div class="section__contents">
-            <h3 class="h3--deco">概要</h3>
-            <p class="works01__copy">Twitterのフォロワーさんが、ブログで配布をされていたワイヤーフレームを基にコーディングを行ないました。</p>
-            <p class="works01__copy">YouTubeにてCSSやJavaScriptでのアニメーション学習を行なったので、それらのアニメーションを使ってサイトを作るという挑戦をしました。</p>
-            <p class="works01__copy">マウスホバーでのアニメーションや、ページ上に泡が浮かぶエフェクトなど、動きを多くしています。</p>
-            <p class="works01__copy">本ページに掲載をいたしました2021/7/18現在は、まだPCデザインしかコーディングが完了していなかったり、メインビジュアルの動画が簡素なものになっていたりと不完全な状態ではありますが、アニメーションの学習成果となるため取り急ぎ掲載している状況です。</p>
-            <p class="works01__copy">レスポンシブについては現在対応中で、完成次第更新いたします。</p>
+      <section class="section summary">
+        <h2 class="section__title">作品について</h2>
+        <div class="section__contents">
+          <h3 class="h3--deco">概要</h3>
+          <p class="works01__copy">HTML/CSSでラジカセを描画し、ボタンを押すと実際に音楽が流れる挙動をJavaSriptにて実装しました。</p>
+          <p class="works01__copy">JSの記述については下記に記載するYouTubeにて学びほぼ写経したものですが、曲名表示が窓から飛び出す際に横にスライド移動する挙動は自分で考えて実装しました（JSで条件分岐のうえ、CSSアニメーションでスライド）。</p>
+        <!-- /.section__contents --></div>
+        <div class="section__contents">
+          <h3 class="h3--deco">苦労したこと・大変だったこと</h3>
+          <p class="works01__copy">大変だったのはJSSのレスポンシブと、JSの曲名スライドの挙動実装です。</p>
+          <h4 class="h4--deco">CSS</h4>
+          <p>描画系のため主にpxで数値を固定して制作しましたが、表示幅を縮めたときにpadding等の兼ね合いで崩れが大きくなったり、下のスピーカーが縦に伸びてしまったりして、その修正に時間がかかってしまいました。</p>
+          <h4 class="h4--deco">JavaScript</h4>
+          <p class="works01__copy">上記の通り再生・曲送りの挙動に関しては写経となってしまいましたが、以下の点について理解をしながらの作業に努めました。</p>
+            <ul>
+              <li>どの記述が度の挙動を生み出すために必要なのか</li>
+              <li>どういった仕組みで動いているのか</li>
+            </ul>
+            <p class="works01__copy">曲名のスライドの挙動については、当初はCSSを使わずJSのみでアニメーションを実装しようとしていましたが難しく、CSSアニメーションを作成しJSにてクラスを付け外す方向に転換しました。<br>こういった点についてはさらにスムーズに実装ができるよう、学習していけたらと思います。</p>
           <!-- /.section__contents --></div>
           <div class="section__contents">
-            <h3 class="h3--deco">WF配布元・学習に使用させていただいた動画</h3>
-            <p class="works01__copy">WF配布元：<br><a href="https://mogablog.work/web/wireframe/" target="_blank" rel="noopener noreferrer">【ポートフォリオ掲載OK】デザイン練習に使えるワイヤーフレーム配布します - mogaBlog</a></p>
-            <p class="works01__copy">学習に使用させていただいたYouTubeチャンネル：<br><a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog" target="_blank" rel="noopener noreferrer">Online Tutorials</a></p>
+            <h3 class="h3--deco">作成時間</h3>
+            <p class="works01__copy">約8.5時間</p>
+          <!-- /.section__contents --></div>
+          <div class="section__contents">
+            <h3 class="h3--deco">学習に使用させていただいた動画</h3>
+            <p class="works01__copy">Simple Music Player using CSS & Vanilla Javascript | Mini Project&nbsp;(Online Tutorial)&nbsp;：<br><a href="https://youtu.be/W5ApFv6z_ts" target="_blank" rel="noopener noreferrer">https://youtu.be/W5ApFv6z_ts</a></p>
           <!-- /.section__contents --></div>
           <div class="linkBox">
             <button class="btn linkBoxBtn"><a href="https://aoi719.github.io/Portfolio_personalWorks/05/aquarium/" target="_blank" rel="noopener noreferrer" class="btn__link linkBoxBtn__link"><span>作品を見る&nbsp;<i class="fas fa-external-link-alt"></i></span></a></button>
