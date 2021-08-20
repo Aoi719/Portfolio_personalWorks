@@ -1047,6 +1047,10 @@ tr:nth-child(4) th {
   background-image: url(../works/images/mv-aquarium.jpg);
 }
 
+.mainVisual--works06 {
+  background-image: url(../works/images/mv-musicplayer.jpg);
+}
+
 /*----------------------
  Works(配下ページ)
 ------------------------*/
