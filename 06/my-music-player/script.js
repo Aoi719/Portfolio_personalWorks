@@ -125,3 +125,6 @@ next.addEventListener('click', function () {
 	titleMove();
 	nextSong();
 });
+
+// 曲が終わったら次の曲へ
+audio.addEventListener('ended', nextSong);
