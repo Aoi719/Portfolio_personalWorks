@@ -851,9 +851,9 @@ TOP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 576px) {
@@ -1303,4 +1303,3 @@ tr:nth-child(4) th {
 #delayAnimation {
   opacity: 0;
 }
-/*# sourceMappingURL=style.css.map */
